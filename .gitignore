@@ -10,3 +10,6 @@ paper-trader/
 **/*.pem
 **/logs/
 __pycache__/
+
+# local-only deploy helper
+deploy_dashboard.sh

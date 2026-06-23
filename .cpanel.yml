@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    # EDIT THIS PATH: replace CPANELUSER with your cPanel username.
+    # To serve at yourdomain.com/  -> /home/CPANELUSER/public_html/
+    # To serve at yourdomain.com/dashboard/ -> /home/CPANELUSER/public_html/dashboard/ (create the folder first)
+    - export DEPLOYPATH=/home/CPANELUSER/public_html/
+    - /bin/mkdir -p "$DEPLOYPATH"
+    - /bin/cp index.html "$DEPLOYPATH"
