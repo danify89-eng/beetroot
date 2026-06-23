@@ -1,0 +1,12 @@
+# Publish ONLY index.html (the dashboard). Everything else stays local.
+# The entire bot folder — code, secrets, brokerage key, logs — is excluded.
+paper-trader/
+
+# Extra safety nets in case files ever move:
+*.pem
+*.env
+.env
+**/.env
+**/*.pem
+**/logs/
+__pycache__/
